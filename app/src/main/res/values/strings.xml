@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">YT Fumi</string>
+    <string name="tab_download">Download</string>
+    <string name="tab_engines">Engines</string>
+    <string name="hint_url">Paste video URL</string>
+    <string name="btn_paste">Paste</string>
+    <string name="btn_download">Download</string>
+    <string name="btn_init_engine">Initialize Engine</string>
+    <string name="btn_update_engine">Update Engine</string>
+    <string name="format_video">MP4 Video</string>
+    <string name="format_audio">MP3 Audio</string>
+    <string name="quality_best">Best</string>
+    <string name="quality_1080p">1080p</string>
+    <string name="quality_720p">720p</string>
+    <string name="quality_480p">480p</string>
+    <string name="quality_320k">320 kbps</string>
+    <string name="quality_192k">192 kbps</string>
+    <string name="quality_128k">128 kbps</string>
+    <string name="status_idle">Ready</string>
+    <string name="status_downloading">Downloading…</string>
+    <string name="status_complete">Download complete</string>
+    <string name="status_error">Download failed</string>
+    <string name="status_initializing">Initializing engine…</string>
+    <string name="status_initialized">Engine initialized</string>
+    <string name="status_update_started">Updating engine…</string>
+    <string name="status_update_complete">Engine updated</string>
+    <string name="engine_not_initialized">Engine not initialized</string>
+    <string name="engine_initialized">Engine ready</string>
+    <string name="recent_downloads">Recent Downloads</string>
+    <string name="no_recent_downloads">No recent downloads</string>
+    <string name="error_empty_url">Please enter a URL</string>
+    <string name="error_init_failed">Initialization failed: %s</string>
+    <string name="error_update_failed">Update failed: %s</string>
+    <string name="error_download_failed">Download failed: %s</string>
+    <string name="clipboard_empty">Clipboard is empty</string>
+    <string name="url_pasted">URL pasted from clipboard</string>
+</resources>

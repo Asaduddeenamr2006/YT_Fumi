@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_margin">24dp</dimen>
+    <dimen name="section_margin">16dp</dimen>
+    <dimen name="item_margin">12dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="corner_radius">20dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="title_text_size">28sp</dimen>
+    <dimen name="body_text_size">16sp</dimen>
+    <dimen name="label_text_size">14sp</dimen>
+    <dimen name="progress_height">12dp</dimen>
+    <dimen name="logo_size">80dp</dimen>
+</resources>

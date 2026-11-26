@@ -1,0 +1,41 @@
+<resources>
+    <style name="Theme.YTFumi" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary_variant</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/on_surface</item>
+        <item name="android:colorError">@color/error</item>
+        <item name="colorOnError">@color/on_error</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="materialAlertDialogTheme">@style/AlertDialogTheme</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.MaterialComponents.DayNight.Dialog">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_variant</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorOnSecondary">@color/on_secondary</item>
+    </style>
+
+    <style name="TextAppearance.YTFumi.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.YTFumi.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Widget.YTFumi.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>
