@@ -37,12 +37,12 @@ public class DownloadHelper {
             try {
                 YoutubeDLResponse response = YoutubeDL.getInstance().execute(request, PROCESS_ID, progressCallback);
 
-                if (response.exitCode == 0) {
+                if (response.getExitCode() == 0) {
                     String outputPath = getOutputDirectory(context).getAbsolutePath();
                     android.os.Handler mainHandler = new android.os.Handler(android.os.Looper.getMainLooper());
                     mainHandler.post(() -> callback.onComplete(outputPath));
                 } else {
-                    String errorMsg = response.err.isEmpty() ? response.out : response.err;
+                    String errorMsg = response.getErr().isEmpty() ? response.getOut() : response.getErr();
                     android.os.Handler mainHandler = new android.os.Handler(android.os.Looper.getMainLooper());
                     mainHandler.post(() -> callback.onError(errorMsg));
                 }

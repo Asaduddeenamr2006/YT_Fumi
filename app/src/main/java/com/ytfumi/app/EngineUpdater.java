@@ -6,8 +6,6 @@ import android.os.Looper;
 import android.util.Log;
 
 import com.yausername.youtubedl_android.YoutubeDL;
-import com.yausername.youtubedl_android.YoutubeDL.UpdateChannel;
-import com.yausername.youtubedl_android.YoutubeDL.UpdateStatus;
 import com.yausername.youtubedl_android.YoutubeDLException;
 
 public class EngineUpdater {
@@ -43,11 +41,11 @@ public class EngineUpdater {
     public static void updateEngine(Context context, final EngineCallback callback) {
         new Thread(() -> {
             try {
-                UpdateStatus status = YoutubeDL.getInstance().updateYoutubeDL(context, UpdateChannel._STABLE);
+                YoutubeDL.UpdateStatus status = YoutubeDL.getInstance().updateYoutubeDL(context, YoutubeDL.UpdateChannel._STABLE);
                 android.os.Handler mainHandler = new android.os.Handler(Looper.getMainLooper());
-                if (status == UpdateStatus.DONE) {
+                if (status == YoutubeDL.UpdateStatus.DONE) {
                     mainHandler.post(() -> callback.onComplete("Engine updated successfully"));
-                } else if (status == UpdateStatus.ALREADY_UP_TO_DATE) {
+                } else if (status == YoutubeDL.UpdateStatus.ALREADY_UP_TO_DATE) {
                     mainHandler.post(() -> callback.onComplete("Engine already up to date"));
                 } else {
                     mainHandler.post(() -> callback.onComplete("Update check completed"));

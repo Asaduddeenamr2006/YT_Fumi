@@ -236,7 +236,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupEngineButtons() {
         initEngineButton.setOnClickListener(v -> {
-            engineUpdater.initializeEngine(this, new EngineUpdater.EngineCallback() {
+            EngineUpdater.initializeEngine(this, new EngineUpdater.EngineCallback() {
                 @Override
                 public void onProgress(String message) {
                     engineStatusTextView.setText(message);
@@ -260,7 +260,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         updateEngineButton.setOnClickListener(v -> {
-            engineUpdater.updateEngine(this, new EngineUpdater.EngineCallback() {
+            EngineUpdater.updateEngine(this, new EngineUpdater.EngineCallback() {
                 @Override
                 public void onProgress(String message) {
                     engineStatusTextView.setText(message);
